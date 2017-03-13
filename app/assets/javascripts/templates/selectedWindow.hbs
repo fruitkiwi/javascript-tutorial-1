@@ -1,0 +1,19 @@
+<h3>Укажите размер окна</h3>
+{{#with window}}
+<div class="window-info">
+  <div class="image">
+    <img src="{{img.big}}">
+  </div>
+  <div class="sizes">
+    {{#each sizes}}
+    {{#with this}}
+    <div class="size-block">
+      <div class="title">{{name}}</div>
+      <div class="input"><input type="text" name="{{@key}}" class="js-window-size" value="{{current}}"></div>
+      <div class="hint">От {{min}} до {{max}}, мм</div>
+    </div>
+    {{/with}}
+    {{/each}}
+  </div>
+</div>
+{{/with}}

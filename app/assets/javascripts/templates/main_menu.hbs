@@ -1,0 +1,25 @@
+<h3>Тип Окна </h3> 
+<div class="menu-items">
+  {{#each menuItems}}
+  <div class="menu-item js-menu-item" data-id="{{this.id}}">
+    <div class="image"> 
+      <img src="{{this.img}}" />
+    </div>
+    <div class="title">
+      <span>{{menuItem.name}}</span>
+    </div>
+  </div>
+  {{/each}}
+</div>
+<h3>Режим Открывания </h3>
+{{#each menuItems}}
+<div class="menu-subitems js-submenu-items">
+  {{#each this.serializedItems}}
+  <div class="menu-subitem js-submenu-item" data-id="{{this.id}}">
+    <div class="image">
+      <img src="{{this.img.small}}" />
+    </div>
+  </div>
+  {{/each}}
+</div>
+{{/each}}

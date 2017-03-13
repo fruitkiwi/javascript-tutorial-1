@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Javascript Tutorial - part 1</title>
   <link rel="stylesheet" href="/public/package.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <script>
     const app = {
       modules: {},
@@ -11,21 +12,15 @@
     }
   </script>
   <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 </head>
 <body>
-  <div class="main-title js-title-example"></div>
-  <div class="main grid-row">
-    <div class="grid-col-uv-12">
-      <div class="main-menu js-main-menu"></div>
-      <div class="selected-window js-selected-window"></div>
-    </div>
-    <div class="grid-col-uv-12">
-      <div class="features-and-services js-features"></div>
-      <div class="features-and-services js-services"></div>
-      <div class="total-price js-total-price"></div>
-    </div>
+  <div class="main-title js-overall-price"></div>
+  <div class="main js-tabs">
+    <ul class="js-tabs-menu">
+      <li class="tab-icon js-add-calc">+</li>
+    </ul>
   </div>
-
   <script src="/public/bundle.js"></script>
 </body>
 </html>

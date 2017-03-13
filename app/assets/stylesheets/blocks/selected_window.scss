@@ -7,7 +7,10 @@
     height: 30px; line-height: 30px; margin-bottom: 10px;
     & > div { display: inline-block; margin-right: 10px; }
     .title { width: 130px; }
-    .input { width: 100px; }
+    .input {
+      width: 100px;
+      input.invalid { border-color: firebrick; }
+    }
     .hint { width: 200px; }
     input { height: 30px; line-height: 30px; border: 1px solid #333; width: 100%; padding: 0 15px; }
   }

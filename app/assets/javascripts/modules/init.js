@@ -9,15 +9,6 @@ app.modules.init = ((self) => {
     });
   }
 
-  function _handlebarsExampleOfUsage() {
-    const titleTemplate = require('../templates/title_example.hbs');
-    $('.js-title-example').html(titleTemplate({title: 'Javascript tutorial part 1'}));
-  }
-
-  function _init() {
-    _handlebarsExampleOfUsage(); // Метод, показываеющий как работать с handlebars-loader
-  }
-
   function _resolveData() {
     return $.when(
       _api({url: 'api/menu-items'}),
@@ -37,7 +28,6 @@ app.modules.init = ((self) => {
   }
 
   self.load = () => {
-    _init();
   };
 
   self.resolve = _resolveData;
